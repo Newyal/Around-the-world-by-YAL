@@ -65,10 +65,9 @@ p{
 @media (max-width: 768px) {
 	body{
 		font-size: 16px;
-		background-color: lightgreen;
 	}
 	.Destinos img{
-		width: 30%;
+		width: 50%;
 		max-width: 100px;
 	}
 	.info{
@@ -90,7 +89,7 @@ p{
 		max-width: 180px;
 	}
 	h1{
-		font-size: 2rem;
+		font-size: 1.8rem;
 	}
 	h4{
 		font-size: 1.5rem;
