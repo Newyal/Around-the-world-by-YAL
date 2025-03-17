@@ -1,17 +1,18 @@
 body{
 	background-color: skyblue;
+	max-width: 1200px;
+	margin: 0 auto;
 }
 h1{
 	font-family: "Rock Salt", cursive;
-	font-size: 55px;
+	font-size: 3rem;
 	background: linear-gradient(to right, transparent,white, red, orange, yellow, green, blue, indigo, black, transparent);
     -webkit-background-clip: text;  /* Necesario para WebKit/Browsers como Chrome */
     color: transparent; /* Hace que el texto sea transparente para mostrar solo el gradiente */
 	text-align: center;
 	text-transform: uppercase;
   	font-optical-sizing: auto;
-  	font-weight: <weight>;
-  	font-style: normal;
+   	font-style: normal;
 }
 h4{
 	font-family: "Dancing Script", cursive;
@@ -45,14 +46,65 @@ nav{
 nav a{
 	color: whitesmoke;
 	text-decoration: none;
-	font-size: 300%;
+	font-size: 2rem;
 }
 .info{
 	color: white;
 	text-align: center;
 	font-family: "Dancing Script", cursive;
-	font-size: 150%;
+	font-size: 1.2rem;
 	background-color:  deepskyblue;	
 	padding: 20px;
 	border-radius: 20px;
+}
+p{
+	font-size: 1.5rem;
+}
+
+/*RESPONSIVE DESIGN*/
+
+@media (max-width: 768px) {
+	body{
+		font-size: 16px;
+		background-color: lightgreen;
+	}
+	.Destinos img{
+		width: 30%;
+		max-width: 100px;
+	}
+	.info{
+		text-align: center;
+		padding: 10px;
+	}
+	nav a {
+        font-size: 1.5rem; /* Reducido para que encaje mejor */
+    }
+}
+@media (max-width:480px){
+	.Destinos{
+		display:flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	.Destinos img{
+		width: 90%;
+		max-width: 180px;
+	}
+	h1{
+		font-size: 2rem;
+	}
+	h4{
+		font-size: 1.5rem;
+	}
+	p{
+		font-size: 1rem;
+	}
+	 nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    nav a {
+        font-size: 1.2rem;
+    }
 }
