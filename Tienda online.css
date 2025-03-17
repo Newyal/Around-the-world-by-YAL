@@ -12,6 +12,7 @@ h1{
 	text-transform: uppercase;
   	font-optical-sizing: auto;
    	font-style: normal;
+   	margin: 15px 0 15px 0;
 }
 #mapamundi{
 	display: block;
@@ -25,6 +26,7 @@ h4{
 	color: darkblue;
 	text-decoration: none;
 	text-align: center;
+    margin: 15px 0 15px 0;
 }
 
 .Destinos{
@@ -94,18 +96,23 @@ p{
 		width: 90%;
 		max-width: 180px;
 	}
+	#mapamundi{
+		width: 90%;
+		max-width: 180px;
+	}
 	h1{
 		font-size: 1.9rem;
 		padding: 10px;
 	}
 	h4{
 		font-size: 2rem;
-		padding: 45px;
+		padding-right: 45px;
+		padding-left: 45px;
 	}
 	p{
 		font-size: 1rem;
 	}
-	 nav ul {
+	nav ul {
         flex-direction: column;
         gap: 10px;
     }
